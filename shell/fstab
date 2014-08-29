@@ -1,0 +1,9 @@
+# <file system>	<mount point>	<type>	<options>	<dump>  <pass>
+/dev/mtdblock4	/		jffs2	rw
+/dev/ram0       /var/log        ramfs   rw
+/dev/ram1       /var/lock       ramfs   rw
+/dev/ram2       /var/run        ramfs   rw
+/dev/ram3       /tmp            ramfs   rw
+10.10.254.126:/usr/local/epics/libera-epics-1.21     /usr/local/libera-epics nfs     wsize=4096,rsize=4096
+10.10.254.126:/home     /home   nfs     defaults,wsize=4096,rsize=4096
+proc		/proc		proc	defaults	0	0
